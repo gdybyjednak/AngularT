@@ -1,0 +1,23 @@
+{
+  "name": "helloworld",
+  "authors": [
+    "Piotr Cieslak <piotr.cieslak@novaris.pl>"
+  ],
+  "description": "angular tutorial",
+  "main": "src/index.html",
+  "license": "JDPC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4"
+  }
+}
