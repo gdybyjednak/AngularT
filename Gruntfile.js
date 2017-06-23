@@ -28,11 +28,19 @@ module.exports = function(grunt) {
 				configFile: 'conf/karma.conf.js',
 				singleRun: true
 			}
+		},
+		protractor: {
+			e2e: {
+				options: {
+					configFile: 'conf/protractor.conf.js'
+				}
+			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-targethtml');
 	grunt.loadNpmTasks('grunt-karma');
+	grunt.loadNpmTasks('grunt-protractor-runner');
 	grunt.registerTask('dist', ['karma', 'concat', 'targethtml', 'copy']);
 };
