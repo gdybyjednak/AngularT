@@ -9,7 +9,7 @@ describe('controller specs', function() {
 		$controller('helloWorldCtrl', {$scope: $scope});
 	}));
 	
-	it('should create "name" model with first name "Jane", function () {
+	it('should create "name" model with first name "Jane"', function () {
 		expect($scope.name.first).toBe("Jane");
 	});	
 });
